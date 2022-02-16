@@ -9,7 +9,7 @@ export const ContainerS = styled.div`
     align-items:center; 
     /* border:2px solid #CCC; */
     /* border-radius:4px; */
-    background-color:var(--lightViolet);
+    background-color:var(--darkerPurple);
     /* padding:0px 5px; */
     /* color:#335; */
 `

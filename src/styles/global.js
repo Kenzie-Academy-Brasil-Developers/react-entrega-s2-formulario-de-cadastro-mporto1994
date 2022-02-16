@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     :root{
         --lightViolet:#B7C0EE;
         --darkPurple:#330C2F;
+        --darkerPurple:#11040F;
     }
 
 `;

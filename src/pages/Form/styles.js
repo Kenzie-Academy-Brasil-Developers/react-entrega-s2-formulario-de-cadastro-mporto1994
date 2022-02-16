@@ -14,7 +14,9 @@ export const FormS = styled.div`
         /* padding:0px 5px; */
         /* color:#335; */
     }
-    /* form input+input{
-        padding-top:20px
-    } */
+    h2{
+        color:var(--lightViolet);
+        font-size:30px;
+        text-align:center
+    }
 `
