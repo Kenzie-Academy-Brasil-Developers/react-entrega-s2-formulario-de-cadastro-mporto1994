@@ -1,13 +1,11 @@
 import { InputDivS } from "./styles"
 
 
-export const Input = (props) => {
-    const {id,label,placeHolder}=props
+export const Input = ({ label , id ,register ,...rest }) => {
     return (
         <InputDivS>
-            <label htmlFor={id}>{label}</label>
-                <input ide={id} placeholder={placeHolder} />
-            
+            <label htmlFor="id" >{label}</label>
+                <input id={id} {...register(id)}  {...rest}/>
         </InputDivS>
     )
 }

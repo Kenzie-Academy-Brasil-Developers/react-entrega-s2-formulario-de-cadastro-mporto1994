@@ -19,4 +19,8 @@ export const FormS = styled.div`
         font-size:30px;
         text-align:center
     }
+    .errorsP{
+        color:var(--lightViolet);
+        margin:10px 0px 0px 5px;
+    }
 `
