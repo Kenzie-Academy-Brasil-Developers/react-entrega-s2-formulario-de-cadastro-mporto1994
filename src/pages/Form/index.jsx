@@ -17,8 +17,8 @@ const Form =({user, setUser}) =>{
     const formSchema = yup.object().shape({
     name:                     yup.string().required("Nome Obrigatório!"),
     mail:                     yup.string().required("Email Obrigatório!").email(),
-    password:                 yup.string().required("Senha Obrigatório!").matches(/^(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/, "sua senha deve conter .."),
-    passwordConfirmation:     yup.string().oneOf([yup.ref('password'), null], "Passwords don't match!")
+    password:                 yup.string().required("Senha Obrigatório!").matches(/^(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/, "Sua senha deve conter letras, números ao menos um caracter especial."),
+    passwordConfirmation:     yup.string().oneOf([yup.ref('password'), null], "Senhas não conferem!")
     })
 
     const {register, handleSubmit,formState: {errors}}=useForm({
